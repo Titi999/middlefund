@@ -1,0 +1,99 @@
+.cardCont{
+    background-color: white;
+    color: black;
+    margin-top: 10%;
+}
+
+.cardCont h1{
+    font-size: 4rem;
+    color: #000;
+    padding-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.worksContainer{
+    text-align:center;
+    min-height: 400px;
+    margin-top: 5%;
+}
+
+.numbering{
+    float:left;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #A49370;
+    font-size: x-large;
+  }
+  
+  
+.borderWaves{
+    background-color:#F5F5F7;
+    text-align:center;
+    width:300px;
+    height:300px;
+    display:inline-block;
+    margin:20px;
+    background-size:cover;
+    border-radius:4px;
+    box-shadow:2px 4px 8px rgba(0,0,0,0.5);
+    cursor:pointer;
+    position:relative;
+    color: black;
+}
+
+@media only screen and (max-width: 350px){
+    .borderWaves{
+    width:270px;
+    height:270px;
+    }
+}
+@media only screen and (max-width: 280px){
+    .borderWaves{
+    width:240px;
+    height:240px;
+    }
+
+}
+
+.borderWaves:before,.borderWaves:after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    border:2px solid transparent;
+    border-radius:4px;
+    animation:borderWavesAnim 1s linear infinite;
+    opacity:0;
+    visibility:hidden;
+    transition:.5s;
+}
+
+.borderWaves:after{
+    animation-delay:.5s;  
+}
+
+.borderWaves:hover:before,.borderWaves:hover:after{
+    opacity:1;
+    visibility:visible;
+}
+
+@keyframes borderWavesAnim{
+    50%{border-color:#A49370}
+    
+    100%{top:-20px;
+        bottom:-20px;
+        left:-20px;
+        right:-20px;
+        border-radius:20px;}
+}
+
+.worksContent{
+    vertical-align: middle;
+    margin: 25px;
+    font-size:small;
+    margin-top: 30%;
+    color: #000;
+}

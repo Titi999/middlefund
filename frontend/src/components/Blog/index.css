@@ -1,0 +1,28 @@
+.blog{
+    background-color: #3A3838;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.blog .link:hover{
+    background-color: black;
+    animation: bounce 1s;
+    transform: skew(-10deg);
+} 
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }

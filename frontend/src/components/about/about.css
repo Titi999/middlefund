@@ -1,0 +1,24 @@
+.about{
+    text-align: center;
+    background-color: #3A3838;
+    padding-top: 15%;
+}
+
+.middlefund{
+    font-size: 6rem;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.intro-content h6{
+    margin-top: 5%;
+    font-size: 1.3rem;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 800px){
+    h1{
+        font-size: 54px;
+    }
+}
